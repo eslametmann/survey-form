@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>freecodecamp  build a survey lesson</title>
+  </head>
+  <body>
+    <h1 id="title">Aspiring developers survey form</h1>
+    <p id="description">thank you for participating your input is appreciated.</p>
+    <form id="survey-form">
+      <section>
+        <label for="name" id="name-label">Name</label><input type="text" id="name" class="wide" placeholder=" name">
+        <label for="email" id="email-label">Email</label><input type="email" id="email" valu="email" class="wide" placeholder=" ****@**.com" required>
+        <label for="age" id="age-label">Age</label><input type="number" id="age" min="13" max="120" placeholder=" **" value="age" class="wide">
+      </section>
+      <section>
+        <label for="dropdown">What option descripes your current coding level ?</label>
+        <select id="dropdown" name="dropdown" class="wide">
+          <option value="beginner">beginner</option>
+          <option value="intermediate">intermediate</option>
+          <option value="experienced">experienced</option>
+          <option value="chatgpt">Chat GPT</option>
+        </select>
+        
+      </section>
+      <section>
+        <fieldset>
+        <legend> are you employed using programming skills?</legend>
+        <label><input type="radio" name="yesno" value="radio">yes</label>
+        <label><input type="radio" name="yesno" value="radio">no</label>
+        </fieldset>
+      </section>
+      <section>
+        <label>what learning materials you consider helpful on your never ending learning journey ?</label>
+        <label for=""frecodecamp""><input type="checkbox" id="frecodecamp" valu="frecodecamp">freecodecamp</label>
+        <label for="theodinproject"><input type="checkbox" id="theodinproject" vaue="theodinproject">the odin project</label>
+        <label for="youtube"><input type="checkbox" id="youtube" value="youtube">youtube toturials</label>
+        <label for="frecourses"><input type="checkbox" id="freecourses" value="freecourses">free online courses</label>
+        <label for="paidcourses"><input type="checkbox" id="paidcourses" value="paidcourses">paid courses</label>
+        <label for="text"><input type="checkbox" id="text" value="text">reading materials</label>
+        <label for="other"><input type="checkbox" id="other" value="other">other</label>
+      </section>
+      <section>
+        <label for="advice">any advice for your fellow coders</label><textarea id="advice" name="advice" rows="5" cols="70"></textarea>
+        <button type="submit" id="submit">submit</button>
+      </section>
+    
+    </form>
+
+  </body>
+</html>
